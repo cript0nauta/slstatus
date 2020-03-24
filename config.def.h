@@ -66,6 +66,8 @@ static const struct arg args[] = {
 	{ datetime,         "%s;",          "%a %d/%m/%y %T" },
 	{ battery_perc,     " %s%%",        "BAT0"     },
 	{ battery_state,    "%s",           "BAT0"     },
+#ifdef HAS_TWO_BATTERIES
 	{ battery_perc,     " %s%%",        "BAT1"     },
 	{ battery_state,    "%s",           "BAT1"     },
+#endif
 };
